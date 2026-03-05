@@ -1,8 +1,9 @@
 import streamlit as st
 import random
 
-# Configuración de página
-st.set_page_config(page_title="Academy: Entrenamiento de Ventas", page_icon="✨")
+# --- INICIALIZAR ESTADO ---
+if 'historial' not in st.session_state:
+    st.session_state.historial = []
 
 # --- BASE DE DATOS (Estructura preparada para 200 preguntas) ---
 if 'banco_total' not in st.session_state:
@@ -123,20 +124,48 @@ if st.session_state.indice < len(st.session_state.examen_actual):
     
     st.info(f"**Marca: {pregunta['marca']}** \n\n {pregunta['pregunta']}")
     
-    # --- LA MAGIA ESTÁ AQUÍ ---
-    # Creamos una copia de las opciones y las barajamos para que no siempre salgan igual
+    # Mezclar opciones
     opciones_mezcladas = list(pregunta['opciones'])
-    # Usamos una semilla basada en el índice para que no se barajen cada vez que haces clic
     random.Random(st.session_state.indice).shuffle(opciones_mezcladas)
     
     respuesta = st.radio("Selecciona tu mejor argumento de venta:", opciones_mezcladas, key=f"q_{st.session_state.indice}")
     
     if st.button("Validar y Siguiente"):
-        if respuesta == pregunta['correcta']:
+        es_correcta = (respuesta == pregunta['correcta'])
+        
+        # Guardamos en el historial para mostrar al final
+        st.session_state.historial.append({
+            "Pregunta": pregunta['pregunta'],
+            "Tu respuesta": respuesta,
+            "Resultado": "✅" if es_correcta else "❌",
+            "Correcta": pregunta['correcta']
+        })
+
+        if es_correcta:
             st.success(f"✅ ¡Correcto! {pregunta['argumento']}")
             st.session_state.puntos += 1
         else:
             st.error(f"❌ Incorrecto. La respuesta era: {pregunta['correcta']}")
         
         st.session_state.indice += 1
+        st.rerun()
+
+else:
+    # --- PANTALLA FINAL ---
+    st.balloons()
+    st.header("🎉 ¡Sesión Terminada!")
+    
+    # Mostrar Puntuación con métrica
+    st.metric("Puntaje Final", f"{st.session_state.puntos} / {len(st.session_state.examen_actual)}")
+    
+    # Mostrar tabla de revisión
+    st.subheader("📋 Revisión de tus respuestas:")
+    st.table(st.session_state.historial)
+    
+    if st.button("Empezar Nueva Sesión"):
+        st.session_state.indice = 0
+        st.session_state.puntos = 0
+        st.session_state.historial = []
+        # Forzar recarga de preguntas
+        st.session_state.examen_actual = random.sample(st.session_state.banco_total[nivel], k=min(20, len(st.session_state.banco_total[nivel])))
         st.rerun()
