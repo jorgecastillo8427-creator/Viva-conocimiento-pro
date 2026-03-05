@@ -1,0 +1,105 @@
+"Básico": [
+        # --- COSRX ---
+        {
+            "pregunta": "Clienta: 'Busco un limpiador suave para usar en las mañanas'. ¿Cuál es el mejor argumento para el *Low pH Good Morning Gel Cleanser*?",
+            "opciones": [
+                "Tiene un pH de 5.0 a 6.0, similar al de la piel, por lo que limpia sin irritar ni dejar sensación de tirantez.",
+                "Tiene mucha espuma y un aroma fuerte a limón.",
+                "Es el limpiador más caro de la marca.",
+                "Se debe usar solo una vez a la semana."
+            ],
+            "correcta": "Tiene un pH de 5.0 a 6.0, similar al de la piel, por lo que limpia sin irritar ni dejar sensación de tirantez.",
+            "argumento": "Venta: El pH equilibrado es clave para clientas que buscan suavidad y no quieren dañar su barrera cutánea."
+        },
+        {
+            "pregunta": "Clienta con puntos negros y poros dilatados. ¿Qué producto de COSRX le recomiendas y por qué?",
+            "opciones": [
+                "El *BHA Blackhead Power Liquid*, porque el BHA penetra en los poros para disolver la grasa y suciedad.",
+                "La *Advanced Snail 96 Mucin Power Essence*, para hidratar la piel seca.",
+                "El *AHA 7 Whitehead Power Liquid*, para exfoliar la superficie de la piel.",
+                "El *Low pH Good Morning Gel Cleanser*, como único paso de tratamiento."
+            ],
+            "correcta": "El *BHA Blackhead Power Liquid*, porque el BHA penetra en los poros para disolver la grasa y suciedad.",
+            "argumento": "Venta: El BHA es el ingrediente 'estrella' para puntos negros. Explicar su acción 'limpiaporos' es un cierre de venta seguro."
+        },
+        # --- TOCOBO ---
+        {
+            "pregunta": "Clienta: 'Quiero un protector solar que no se sienta pegajoso y huela rico'. ¿Cuál le ofreces de TOCOBO?",
+            "opciones": [
+                "El *Bio-Watery Sun Cream*, porque es tipo esencia, muy ligero, hidratante y con un aroma refrescante.",
+                "El *Cotton Soft Sun Stick*, para un acabado mate y sin olor.",
+                "La *Vita Glazed Lip Mask*, para hidratar los labios.",
+                "Cualquier protector solar en crema de otra marca."
+            ],
+            "correcta": "El *Bio-Watery Sun Cream*, porque es tipo esencia, muy ligero, hidratante y con un aroma refrescante.",
+            "argumento": "Venta: La textura 'tipo esencia' y el aroma son los principales ganchos de venta para este producto viral."
+        },
+        # --- G9SKIN ---
+        {
+            "pregunta": "Clienta: '¿Para qué sirve la línea White in Milk de G9SKIN?'. Tu respuesta de venta es:",
+            "opciones": [
+                "Es solo para pieles grasas y con acné.",
+                "Es una línea aclarante e hidratante gracias a la proteína de leche y niacinamida.",
+                "Es un exfoliante fuerte para el cuerpo.",
+                "Solo sirve para quitar el maquillaje a prueba de agua."
+            ],
+            "correcta": "Es una línea aclarante e hidratante gracias a la proteína de leche y niacinamida.",
+            "argumento": "Venta: La proteína de leche es un ingrediente 'premium' que comunica suavidad y lujo inmediato."
+        },
+        # ... (Aquí irían las otras 46 preguntas del bloque 1)
+    ],
+    "Intermedio": [
+        # --- COSRX (Mucina de Caracol) ---
+        {
+            "pregunta": "Clienta: 'He oído hablar de la baba de caracol, ¿realmente funciona?'. ¿Cómo vendes la *Advanced Snail 96 Mucin Power Essence*?",
+            "opciones": [
+                "Es solo marketing, no hace nada especial.",
+                "Contiene 96.3% de filtrado de secreción de caracol, que repara la piel, hidrata profundamente y mejora la textura.",
+                "Es un exfoliante químico fuerte.",
+                "Solo se recomienda para pieles muy maduras."
+            ],
+            "correcta": "Contiene 96.3% de filtrado de secreción de caracol, que repara la piel, hidrata profundamente y mejora la textura.",
+            "argumento": "Venta: El alto porcentaje de ingrediente activo (96.3%) es el argumento de peso para demostrar la eficacia del producto."
+        },
+        # --- TOCOBO (Cica) ---
+        {
+            "pregunta": "Clienta con piel sensible e irritada. ¿Qué línea de TOCOBO le recomiendas y cuál es su beneficio?",
+            "opciones": [
+                "La línea *Cica Calming*, porque usa Centella Asiática Fermentada y 10 tipos de Ácido Hialurónico para calmar e hidratar.",
+                "La línea *Vita Tone Up*, para iluminar la piel.",
+                "Cualquier protector solar en barra.",
+                "La línea de colágeno de otra marca."
+            ],
+            "correcta": "La línea *Cica Calming*, porque usa Centella Asiática Fermentada y 10 tipos de Ácido Hialurónico para calmar e hidratar.",
+            "argumento": "Venta: La Centella Asiática Fermentada es una innovación tecnológica que potencia el efecto calmante, ideal para vender a pieles sensibles."
+        },
+        # ... (Aquí irían las otras 48 preguntas del bloque 1)
+    ],
+    "Avanzado": [
+        # --- COSRX (Vitamina C) ---
+        {
+            "pregunta": "Clienta: 'Busco un suero potente para las manchas y la luminosidad'. ¿Cómo vendes *The Vitamin C 23 Serum* de COSRX?",
+            "opciones": [
+                "Diciendo que es agua con color y no hace nada.",
+                "Explicando que tiene 23% de Vitamina C pura (Ácido Ascórbico), una concentración muy alta y eficaz para iluminar y unificar el tono.",
+                "Diciendo que se puede usar a cualquier hora del día sin protector solar.",
+                "Recomendándolo solo para pieles muy grasas."
+            ],
+            "correcta": "Explicando que tiene 23% de Vitamina C pura (Ácido Ascórbico), una concentración muy alta y eficaz para iluminar y unificar el tono.",
+            "argumento": "Venta: La alta concentración (23%) de Vitamina C pura es el argumento principal para venderlo como un tratamiento intensivo y eficaz."
+        },
+        # --- TOCOBO (Cushion) ---
+        {
+            "pregunta": "Clienta: 'Quiero una base de maquillaje que se vea natural y me hidrate la piel'. ¿Qué le ofreces de TOCOBO?",
+            "opciones": [
+                "La *Apple Dewy Fit Cushion*, porque tiene SweetCera™ y 10 tipos de ácido hialurónico para una hidratación profunda y un acabado luminoso.",
+                "Cualquier base de maquillaje mate de otra marca.",
+                "El *Vita Waterproof Sun Stick*.",
+                "La *Vita Glazed Lip Mask*."
+            ],
+            "correcta": "La *Apple Dewy Fit Cushion*, porque tiene SweetCera™ y 10 tipos de ácido hialurónico para una hidratación profunda y un acabado luminoso.",
+            "argumento": "Venta: Los ingredientes hidratantes (SweetCera™ y ácido hialurónico) son el valor añadido para venderla como un híbrido entre tratamiento y maquillaje."
+        },
+        # ... (Aquí irían las otras 48 preguntas del bloque 1)
+    ]
+}
