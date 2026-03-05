@@ -118,15 +118,18 @@ if st.sidebar.button("Cargar Nueva Sesión (20 preguntas)") or 'examen_actual' n
 if st.session_state.indice < len(st.session_state.examen_actual):
     pregunta = st.session_state.examen_actual[st.session_state.indice]
     
-    # Barra de progreso
-    progreso = (st.session_state.indice) / len(st.session_state.examen_actual)
-    st.progress(progreso)
+    st.progress(st.session_state.indice / len(st.session_state.examen_actual))
     st.write(f"Pregunta {st.session_state.indice + 1} de {len(st.session_state.examen_actual)}")
     
     st.info(f"**Marca: {pregunta['marca']}** \n\n {pregunta['pregunta']}")
     
-    # Respuesta del usuario
-    respuesta = st.radio("Selecciona tu mejor argumento de venta:", pregunta['opciones'], key=f"q_{st.session_state.indice}")
+    # --- LA MAGIA ESTÁ AQUÍ ---
+    # Creamos una copia de las opciones y las barajamos para que no siempre salgan igual
+    opciones_mezcladas = list(pregunta['opciones'])
+    # Usamos una semilla basada en el índice para que no se barajen cada vez que haces clic
+    random.Random(st.session_state.indice).shuffle(opciones_mezcladas)
+    
+    respuesta = st.radio("Selecciona tu mejor argumento de venta:", opciones_mezcladas, key=f"q_{st.session_state.indice}")
     
     if st.button("Validar y Siguiente"):
         if respuesta == pregunta['correcta']:
@@ -134,28 +137,6 @@ if st.session_state.indice < len(st.session_state.examen_actual):
             st.session_state.puntos += 1
         else:
             st.error(f"❌ Incorrecto. La respuesta era: {pregunta['correcta']}")
-            st.warning(f"Tip de venta: {pregunta['argumento']}")
         
         st.session_state.indice += 1
-        # Pequeña pausa para que vean el feedback antes de recargar
-        st.rerun()
-else:
-    # Final de la sesión
-    st.balloons()
-    st.header("🎉 ¡Sesión de 20 Preguntas Terminada!")
-    # Cálculo de efectividad
-    porcentaje = (st.session_state.puntos / len(st.session_state.examen_actual)) * 100
-    st.metric("Puntaje Final:", f"{st.session_state.puntos} / {len(st.session_state.examen_actual)}")
-    
-    if porcentaje >= 80:
-        st.success(f"Efectividad: {porcentaje}% - ¡Eres una Experta Pro! 😎")
-    else:
-        st.warning(f"Efectividad: {porcentaje}% - ¡Sigue practicando con los catálogos! 📚")
-        
-    if st.button("Iniciar Nueva Sesión"):
-        st.session_state.indice = 0
-        st.session_state.puntos = 0
-        # Forzar nueva selección al azar
-        pool = st.session_state.banco_total[nivel]
-        st.session_state.examen_actual = random.sample(pool, k=min(20, len(pool)))
         st.rerun()
