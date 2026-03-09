@@ -258,6 +258,90 @@ banco_total = {
         {"marca": "MAQUILLADORA", "pregunta": "¿Para qué sirve aplicar el spray fijador en la esponja?", "opciones": ["Para mayor duración y mejor acabado", "Para que no se ensucie", "Para que pese más"], "correcta": "Para mayor duración y mejor acabado"},
         {"marca": "MAQUILLADORA", "pregunta": "¿Qué se debe hacer antes de aplicar un labial mate?", "opciones": ["Exfoliar e hidratar los labios", "Aplicar polvos", "No hacer nada"], "correcta": "Exfoliar e hidratar los labios"},
         
+ ], # <--- AQUÍ CIERRAS MAQUILLAJE
+    
+    "Capilar": [ # <--- AQUÍ INICIAS LA NUEVA CATEGORÍA (Línea 190)
+        
+    # PRIORIDAD 1: DISCIPLINE ALISANT SPRAY (PRODUCTO #1)
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es la función principal del 'Vegan Discipline Alisant Spray'?", "opciones": ["Control total del frizz y protección térmica", "Fijación extra fuerte para peinados altos", "Aclarar el tono del cabello rubio", "Solo dar aroma"], "correcta": "Control total del frizz y protección térmica"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué ingrediente clave contiene el 'Discipline Alisant Spray'?", "opciones": ["Manteca de Karité y Aceite de Coco", "Carbón activado", "Extracto de Ortiga", "Piroctona Olamina"], "correcta": "Manteca de Karité y Aceite de Coco"},
+    {"marca": "ECHOSLINE", "pregunta": "¿En qué momento se recomienda usar el 'Discipline Alisant Spray'?", "opciones": ["Antes del uso de secador o plancha", "Después de lavar y secar totalmente", "Solo en cabello seco por las mañanas", "Durante el lavado como champú"], "correcta": "Antes del uso de secador o plancha"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es el beneficio del 'Discipline Alisant Spray' para cabellos rebeldes?", "opciones": ["Facilita el peinado y deja un acabado pulido", "Enreda el cabello para dar volumen", "Cambia el color de la fibra capilar", "Elimina la grasa del cuero cabelludo"], "correcta": "Facilita el peinado y deja un acabado pulido"},
+
+    # PRIORIDAD 2: BALANCE DESINTOXICANTE (PRODUCTO #2)
+    {"marca": "ECHOSLINE", "pregunta": "¿Para qué sirve el 'Vegan Balance Desintoxicante Trat.'?", "opciones": ["Purificar y reequilibrar el cuero cabelludo", "Fijar el peinado por 24 horas", "Hidratar las puntas abiertas", "Oscurecer las canas"], "correcta": "Purificar y reequilibrar el cuero cabelludo"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué problema soluciona principalmente el 'Balance Desintoxicante'?", "opciones": ["Impurezas, picor y cuero cabelludo saturado", "Falta de brillo en las puntas", "Pérdida de color en cabellos teñidos", "Cabello excesivamente seco"], "correcta": "Impurezas, picor y cuero cabelludo saturado"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué sensación aporta el 'Balance Desintoxicante' tras su aplicación?", "opciones": ["Frescura y limpieza profunda", "Sensación de pesadez", "Calor intenso", "Textura pegajosa"], "correcta": "Frescura y limpieza profunda"},
+
+    # PRIORIDAD 3: LOCIÓN ENERGIZANTE (PRODUCTO #3)
+    {"marca": "ECHOSLINE", "pregunta": "¿A quién está dirigida la 'Loción Energizante' de 125ml?", "opciones": ["Cabellos débiles, finos y con tendencia a la caída", "Cabellos rizados y gruesos", "Solo para niños", "Personas que quieren alisar su cabello"], "correcta": "Cabellos débiles, finos y con tendencia a la caída"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué activos naturales destacan en la 'Loción Energizante'?", "opciones": ["Extractos de Romero y Ortiga", "Aceite de Argán", "Manteca de Karité", "Aceite de Lino"], "correcta": "Extractos de Romero y Ortiga"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es el beneficio principal de usar la 'Loción Energizante'?", "opciones": ["Fortalecer el cabello desde la raíz", "Dar una fijación flexible", "Limpiar el exceso de sebo", "Rellenar las puntas abiertas"], "correcta": "Fortalecer el cabello desde la raíz"},
+
+    # PRIORIDAD 4: DISCIPLINE ACONDICIONADOR (PRODUCTO #4)
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es la ventaja del 'Vegan Discipline Acondicionador'?", "opciones": ["Nutre y desenreda sin aportar peso", "Es una laca de fijación suave", "Sirve para teñir el cabello", "Solo se usa en cabello seco"], "correcta": "Nutre y desenreda sin aportar peso"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué línea de productos complementa mejor al 'Discipline Acondicionador'?", "opciones": ["La línea Discipline para control de frizz", "Línea Karbon para detox", "Línea Anti-amarillo", "Línea de styling (lacas)"], "correcta": "La línea Discipline para control de frizz"},
+
+    # PRIORIDAD 5: LUXURY OIL (PRODUCTO #5)
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué resultado ofrece el 'Luxury Oil 100ml'?", "opciones": ["Brillo instantáneo y nutrición profunda", "Efecto mate sin brillo", "Fijación extra fuerte", "Limpieza de impurezas"], "correcta": "Brillo instantáneo y nutrición profunda"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Para qué tipo de cabello es ideal el 'Luxury Oil'?", "opciones": ["Cabellos secos, opacos y deshidratados", "Cabellos muy grasos", "Cabellos recién lavados únicamente", "Solo para hombres"], "correcta": "Cabellos secos, opacos y deshidratados"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es la característica de la textura del 'Luxury Oil'?", "opciones": ["Se absorbe rápido sin dejar residuo graso", "Es muy espesa y difícil de aplicar", "Es un polvo voluminizador", "Es un spray de agua"], "correcta": "Se absorbe rápido sin dejar residuo graso"},
+
+    # LÍNEA KI POWER (RECONSTRUCCIÓN)
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es el objetivo de la línea 'Ki Power'?", "opciones": ["Reconstrucción molecular del cabello dañado", "Control de la caspa", "Dar volumen a cabellos finos", "Fijación de peinados"], "correcta": "Reconstrucción molecular del cabello dañado"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué ingrediente estrella utiliza 'Ki Power'?", "opciones": ["Queratina y Ácido Hialurónico", "Aceite de Oliva", "Menta", "Extracto de Bambú"], "correcta": "Queratina y Ácido Hialurónico"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué hace el 'Ki Power Shampoo'?", "opciones": ["Prepara el cabello abriendo la cutícula", "Sella las puntas instantáneamente", "Aporta color violeta", "Fija el peinado"], "correcta": "Prepara el cabello abriendo la cutícula"},
+
+    # LÍNEA ARGAN
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué producto es conocido como el '15 en 1' de la marca?", "opciones": ["Argan Total One Spray", "Discipline Spray", "Luxury Oil", "Laca Voluminizadora"], "correcta": "Argan Total One Spray"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es la función del 'Argan Total One Spray'?", "opciones": ["Múltiples beneficios: hidratar, proteger, desenredar, etc.", "Solo sirve para fijar el peinado", "Es un tinte temporal", "Limpiar el cuero cabelludo"], "correcta": "Múltiples beneficios: hidratar, proteger, desenredar, etc."},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué aporta el 'Argan Fluido' al cabello?", "opciones": ["Suavidad sedosa y sellado de puntas", "Volumen extremo en la raíz", "Efecto mojado permanente", "Fijación total"], "correcta": "Suavidad sedosa y sellado de puntas"},
+
+    # LÍNEA MAQUI 3
+    {"marca": "ECHOSLINE", "pregunta": "¿En qué se basa la línea 'Maqui 3'?", "opciones": ["Poder antioxidante de la baya de Maqui", "Extracto de seda natural", "Aceite de ballena", "Componentes químicos sintéticos"], "correcta": "Poder antioxidante de la baya de Maqui"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es una característica principal de 'Maqui 3'?", "opciones": ["Fórmulas veganas y naturales", "Fijación extrema", "Solo para cabellos negros", "No necesita enjuague"], "correcta": "Fórmulas veganas y naturales"},
+
+    # LÍNEA BALANCE (GRASA Y CASPA)
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué hace el 'Balance Purificante - Caspa Sh.'?", "opciones": ["Elimina la descamación y calma el picor", "Fomenta la aparición de grasa", "Alisa el cabello", "Es un acondicionador"], "correcta": "Elimina la descamación y calma el picor"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Para qué sirve el 'Balance Cabello Graso Sh.'?", "opciones": ["Limpiar profundamente y regular el sebo", "Aportar aceites pesados", "Mantener el color rubio", "Dar volumen extremo"], "correcta": "Limpiar profundamente y regular el sebo"},
+
+    # LÍNEA KERATIN
+    {"marca": "ECHOSLINE", "pregunta": "¿A quién se recomienda la línea 'Keratin'?", "opciones": ["Cabellos tratados químicamente o dañados", "Cabellos naturales y sanos sin frizz", "Solo para niños", "Personas que no usan plancha"], "correcta": "Cabellos tratados químicamente o dañados"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué beneficio tiene el 'Keratin Trat. Repar/Punt'?", "opciones": ["Sella y repara las puntas abiertas", "Aumenta la caída del cabello", "Limpia la raíz grasa", "Aporta color plateado"], "correcta": "Sella y repara las puntas abiertas"},
+
+    # LÍNEA ANTI-AMARILLO Y NO YELLOW
+    {"marca": "ECHOSLINE", "pregunta": "¿Para qué sirve el champú 'Anti-Amarillo'?", "opciones": ["Neutralizar reflejos amarillos en rubios o canas", "Aclarar el cabello oscuro", "Fijar el peinado", "Hidratar el cuero cabelludo"], "correcta": "Neutralizar reflejos amarillos en rubios o canas"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué producto es un bifásico para rubios?", "opciones": ["No Yellow Bi-Phase Lotion", "Luxury Oil", "Liss Styler", "Argan Fluido"], "correcta": "No Yellow Bi-Phase Lotion"},
+
+    # LÍNEA KARBON (CARBÓN ACTIVADO)
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es la función principal de la línea 'Karbon'?", "opciones": ["Purificar el cabello de la contaminación (Anti-polución)", "Dar color negro al cabello", "Hidratar rizos", "Fijar el peinado"], "correcta": "Purificar el cabello de la contaminación (Anti-polución)"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué aspecto tiene el champú 'Karbon'?", "opciones": ["Color negro debido al carbón vegetal", "Transparente", "Blanco cremoso", "Color oro"], "correcta": "Color negro debido al carbón vegetal"},
+
+    # STYLING (LACAS, MOUSSES, CREMAS)
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué ofrece la 'Laca Spray Voluminizadora'?", "opciones": ["Fijación con cuerpo y volumen", "Efecto mojado", "Solo hidratación", "Cambio de color"], "correcta": "Fijación con cuerpo y volumen"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Para qué sirve el 'Curl Mousse 300ml'?", "opciones": ["Definir rizos de forma elástica", "Alisar el cabello permanentemente", "Limpiar el cuero cabelludo", "Protector térmico"], "correcta": "Definir rizos de forma elástica"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué beneficio tiene la crema 'Twister'?", "opciones": ["Definición y control de rizos", "Alisado extremo con plancha", "Eliminar la caspa", "Fijación extra fuerte"], "correcta": "Definición y control de rizos"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué producto es ideal para un acabado mate?", "opciones": ["Pasta Mold. Efec/Matte Look", "Luxury Oil", "Argan Fluido", "Gloss Crystal"], "correcta": "Pasta Mold. Efec/Matte Look"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué hace el 'Gloss Crystal'?", "opciones": ["Aporta un brillo extremo de acabado", "Elimina el color del cabello", "Es un champú en seco", "Fija el peinado por 48 horas"], "correcta": "Aporta un brillo extremo de acabado"},
+
+    # HAIR RETOUCH (RETOQUE DE CANAS)
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es la función del 'Hair Retouch'?", "opciones": ["Cubrir canas temporalmente entre tintes", "Cambiar el color del cabello para siempre", "Fortalecer la raíz", "Es un acondicionador"], "correcta": "Cubrir canas temporalmente entre tintes"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Cómo se aplica el 'Hair Retouch'?", "opciones": ["Spray directo sobre la raíz seca", "Como un champú en la ducha", "Con brocha y peróxido", "Se deja actuar 30 minutos"], "correcta": "Spray directo sobre la raíz seca"},
+
+    # VARIOS Y VENTAS
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué producto usarías para proteger el cabello del calor del secador?", "opciones": ["Discipline Alisant Spray", "Balance Shampoo", "Anti-amarillo Mask", "Hair Retouch"], "correcta": "Discipline Alisant Spray"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es el mejor argumento para vender Echosline?", "opciones": ["Calidad profesional italiana con enfoque vegano", "Es el producto más barato del súper", "Se puede usar como jabón corporal", "Solo se vende a peluqueros"], "correcta": "Calidad profesional italiana con enfoque vegano"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué línea recomendarías para un cuero cabelludo con picazón?", "opciones": ["Balance Desintoxicante", "Laca Extra Fuerte", "Twister Crema", "Pasta Mate"], "correcta": "Balance Desintoxicante"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué producto ayuda a desenredar cabellos difíciles al instante?", "opciones": ["Argan Acond. Bifásico", "Laca Voluminizadora", "Hair Retouch", "Pasta Mate"], "correcta": "Argan Acond. Bifásico"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué champú usarías para un cabello teñido de chocolate?", "opciones": ["Color Up 150ml Chocolate", "Karbon Shampoo", "Balance Shampoo", "Laca Voluminizadora"], "correcta": "Color Up 150ml Chocolate"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Para qué sirve el 'Liss Styler'?", "opciones": ["Fluido alisador para facilitar el brushing", "Para activar rizos", "Para dar volumen en la raíz", "Para cubrir canas"], "correcta": "Fluido alisador para facilitar el brushing"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué diferencia al 'Luxury Oil' de otros aceites?", "opciones": ["Su mezcla de 5 aceites y ligereza", "Que es de color azul", "Que huele a menta", "Que se usa solo en la raíz"], "correcta": "Su mezcla de 5 aceites y ligereza"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué línea elegirías para recuperar un cabello quemado por decoloración?", "opciones": ["Ki Power", "Balance", "Laca Extra Fuerte", "Twister"], "correcta": "Ki Power"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Cuál es la función de la 'Mousse 400ml Extra Forte'?", "opciones": ["Fijación y volumen máximo para peinados", "Hidratar las puntas secas", "Eliminar el frizz sin fijar", "Limpiar el cabello"], "correcta": "Fijación y volumen máximo para peinados"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué aporta el extracto de Romero en los productos de caída?", "opciones": ["Estimula la circulación sanguínea", "Tinta el cabello de verde", "Suaviza las puntas", "Elimina el olor del cabello"], "correcta": "Estimula la circulación sanguínea"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Qué producto es un tratamiento intensivo de 1000ml para disciplina?", "opciones": ["Vegan Discipl. Mask 1000ml", "Laca Spray 100ml", "Hair Retouch", "Pasta Mate"], "correcta": "Vegan Discipl. Mask 1000ml"},
+    {"marca": "ECHOSLINE", "pregunta": "¿Por qué recomendarías la línea Maqui 3?", "opciones": ["Por su tecnología antioxidante y compacta", "Porque es la más económica", "Porque sirve para todo tipo de piel", "Porque no tiene aroma"], "correcta": "Por su tecnología antioxidante y compacta"},
+
         
         # ... (Se completan las 20 preguntas de teoría profesional)
     ] # Cierre final de la lista de maquillaje
