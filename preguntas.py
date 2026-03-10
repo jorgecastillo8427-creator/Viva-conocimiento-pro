@@ -1,5 +1,5 @@
 # --- 4. BANCO DE PREGUNTAS (VALIDADO CON CATÁLOGOS) ---
-banco_total = {
+BANCO_PREGUNTAS = {
     "Skin Care": [
 
     # --- MEDICUBE ---
