@@ -78,33 +78,47 @@ for key, value in keys_to_init.items():
     if key not in st.session_state:
         st.session_state[key] = value
 
-# --- 6. LÓGICA DE ACCESO (LOGIN) ---
+# --- 5. LÓGICA DE LOGIN (CORREGIDA PARA CONTAR INTENTOS) ---
 if not st.session_state.autenticado:
     st.title("🔐 Acceso VIVA Academy")
     clave_input = st.text_input("Ingresa tu Clave:", type="password")
     
     if st.button("Ingresar"):
+        # Leemos la lista de vendedores autorizados
         df_form = conn.read(worksheet="Form_Responses", ttl=0)
         df_form['clave'] = df_form['clave'].astype(str).str.strip()
+        
+        # Buscamos la fila que coincida con la clave
         u = df_form[df_form['clave'] == clave_input.strip()]
         
         if not u.empty:
-            intentos = int(u.iloc[0].get('Intentos', 0))
-            if intentos >= 5: # Ajustado a 5 por seguridad
-                st.error("Máximo de intentos alcanzado.")
+            # 1. Obtenemos los intentos actuales de la fila encontrada
+            intentos_actuales = int(u.iloc[0].get('Intentos', 0))
+            
+            if intentos_actuales >= 3:
+                st.error("❌ Has alcanzado el máximo de 3 intentos permitidos.")
             else:
-                # Guardamos datos clave y el correo del supervisor de la Columna B
+                # 2. SUMAMOS EL INTENTO Y ACTUALIZAMOS EL EXCEL
+                df_form.loc[df_form['clave'] == clave_input.strip(), 'Intentos'] = intentos_actuales + 1
+                conn.update(worksheet="Form_Responses", data=df_form)
+                
+                # 3. Cargamos la sesión del vendedor
                 st.session_state.update({
                     "autenticado": True,
                     "nom": u.iloc[0]['NOMBRES'],
                     "correo": u.iloc[0]['CORREO DEL VENDEDOR'],
                     "sucursal": u.iloc[0]['SUCURSAL'],
                     "supervisor_mail": u.iloc[0]['Dirección de correo electrónico'], # Columna B
-                    "inicio": None
+                    "inicio": None,
+                    "indice": 0,
+                    "puntos": 0,
+                    "hist": [],
+                    "examen_terminado": False,
+                    "ya_guardado": False
                 })
                 st.rerun()
         else:
-            st.error("Clave incorrecta")
+            st.error("Clave incorrecta. Verifica con tu supervisor.")
     st.stop()
 
 # --- 7. PANTALLA DE RESULTADOS FINALES ---
