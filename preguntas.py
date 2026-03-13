@@ -4,7 +4,6 @@ BANCO_PREGUNTAS = {
 
     # --- MEDICUBE ---
     {"marca": "MEDICUBE", "pregunta": "¿Para qué se utilizan los 'Zero Pore Pads 2.0'?", "opciones": ["Exfoliación y control de poros", "Desmaquillar ojos", "Limpiar heridas", "Hidratar labios"], "correcta": "Exfoliación y control de poros"},
-    {"marca": "MEDICUBE", "pregunta": "¿Qué tecnología utiliza el dispositivo 'Age-R Booster H'?", "opciones": ["Electroporación", "Vapor", "Luz LED únicamente", "Infrarrojos"], "correcta": "Electroporación"},
     {"marca": "MEDICUBE", "pregunta": "¿Cuál es el beneficio de la 'Collagen Jelly Cream'?", "opciones": ["Aportar firmeza y luminosidad", "Quitar el maquillaje", "Secar granitos", "Exfoliar físicamente"], "correcta": "Aportar firmeza y luminosidad"},
     {"marca": "MEDICUBE", "pregunta": "¿Para qué sirve el suero 'Deep Vita C'?", "opciones": ["Iluminar y tratar manchas", "Hidratar profundamente", "Calmar rojeces", "Limpiar poros"], "correcta": "Iluminar y tratar manchas"},
 
@@ -71,7 +70,6 @@ BANCO_PREGUNTAS = {
     {"marca": "MEDICUBE", "pregunta": "¿Qué beneficio tiene la 'Deep Vita C Pad'?", "opciones": ["Exfoliación e iluminación con Vitamina C", "Lavar el cabello", "Protección solar", "Solo hidratación"], "correcta": "Exfoliación e iluminación con Vitamina C"},
     {"marca": "TOCOBO", "pregunta": "¿Cuál es la función del 'Powder Cream Lip Balm'?", "opciones": ["Hidratar con acabado mate", "Dar brillo extremo", "Limpiar los labios"], "correcta": "Hidratar con acabado mate"},
     {"marca": "COSRX", "pregunta": "¿Qué ingrediente principal tiene el 'The Retinol 0.1 Cream'?", "opciones": ["Retinol puro", "Ácido Hialurónico", "Vitamina C", "Centella"], "correcta": "Retinol puro"},
-    {"marca": "MEDICUBE", "pregunta": "¿Qué tecnología usa el 'Age-R Ussera Deep Shot'?", "opciones": ["Radiofrecuencia y Ultrasonido", "Luz LED azul", "Vapor de agua"], "correcta": "Radiofrecuencia y Ultrasonido"},
     {"marca": "TOCOBO", "pregunta": "¿Qué ingrediente destaca en el 'Coconut Clay Cleansing Foam'?", "opciones": ["Calamina y Bentonita (Arcillas)", "Aceite de oliva", "Miel", "Oro 24k"], "correcta": "Calamina y Bentonita (Arcillas)"},
     {"marca": "COSRX", "pregunta": "¿Cuál es la función del 'Master Patch Intensive'?", "opciones": ["Protección invisible para granitos", "Hidratar la ojera", "Limpiar la cara", "Exfoliar"], "correcta": "Protección invisible para granitos"},
     {"marca": "MEDICUBE", "pregunta": "¿Qué hace el 'Red Foam Cleanser'?", "opciones": ["Limpieza profunda para piel acnéica", "Hidratar piel seca", "Quitar arrugas", "Aclarar manchas"], "correcta": "Limpieza profunda para piel acnéica"},
@@ -84,7 +82,6 @@ BANCO_PREGUNTAS = {
     {"marca": "COSMETOLOGÍA", "pregunta": "¿Qué es el pH de la piel?", "opciones": ["Potencial de Hidrógeno (acidez/alcalinidad)", "Una marca de cremas", "Un tipo de vitamina", "Grasa"], "correcta": "Potencial de Hidrógeno (acidez/alcalinidad)"},
     {"marca": "TOCOBO", "pregunta": "¿Qué beneficio tiene el 'Multi Ceramide Cream'?", "opciones": ["Hidratación de larga duración (10 capas)", "Limpieza de poros", "Exfoliación física"], "correcta": "Hidratación de larga duración (10 capas)"},
     {"marca": "COSRX", "pregunta": "¿Para qué sirve el 'The Niacinamide 15 Serum'?", "opciones": ["Control de acné y poros", "Hidratar piel muy seca", "Solo para ojos", "Protección solar"], "correcta": "Control de acné y poros"},
-    {"marca": "MEDICUBE", "pregunta": "¿Qué es el 'Age-R Derma Shot'?", "opciones": ["Dispositivo de EMS para masajear músculos", "Una crema", "Un suero", "Un tónico"], "correcta": "Dispositivo de EMS para masajear músculos"},
     {"marca": "TOCOBO", "pregunta": "¿Para qué sirve el 'Calming Ampoule'?", "opciones": ["Calmar piel irritada rápidamente", "Dar color", "Exfoliar", "Limpiar aceite"], "correcta": "Calmar piel irritada rápidamente"},
     {"marca": "COSRX", "pregunta": "¿Para qué se usa el 'Ultimate Moisturizing Honey Overnight Mask'?", "opciones": ["Calmar e hidratar con propóleo", "Secar granitos", "Lavar el pelo"], "correcta": "Calmar e hidratar con propóleo"},
     {"marca": "COSMETOLOGÍA", "pregunta": "¿Qué significa que un producto sea 'Cruelty-free'?", "opciones": ["No testado en animales", "No tiene químicos", "Es vegano", "Es barato"], "correcta": "No testado en animales"},
@@ -105,10 +102,8 @@ BANCO_PREGUNTAS = {
         {"marca": "MILANI", "pregunta": "¿Cuál es el tono más icónico de los Baked Blush?", "opciones": ["Luminoso", "Red Wine", "Petal Pink", "Sunset Shore", "Bronze"], "correcta": "Luminoso"},
         {"marca": "MILANI", "pregunta": "¿Cuál es la función del 'No Pore Zone Primer'?", "opciones": ["Matificar y disimular poros", "Dar brillo", "Hidratar labios", "Lavar la cara"], "correcta": "Matificar y disimular poros"},
         {"marca": "MILANI", "pregunta": "¿Qué acabado tiene el labial 'Color Fetish Matte'?", "opciones": ["Mate aterciopelado", "Brillo espejo", "Metálico"], "correcta": "Mate aterciopelado"},
-        {"marca": "MILANI", "pregunta": "¿Para qué sirve el 'Chill Out Soothing Primer'?", "opciones": ["Calmar la piel con extracto de avena", "Exfoliar", "Dar color bronceado", "Fijar cejas"], "correcta": "Calmar la piel con extracto de avena"},
         {"marca": "MILANI", "pregunta": "¿Qué característica tiene la máscara 'Highly Rated Anti-Gravity'?", "opciones": ["Volumen, longitud y elevación instantánea", "Solo alarga", "Es transparente", "Solo para pestañas postizas"], "correcta": "Volumen, longitud y elevación instantánea"},
-        {"marca": "MILANI", "pregunta": "¿Qué ingrediente destaca en la línea 'Fruit Fetish'?", "opciones": ["Extractos de frutas y aceites", "Ácido hialurónico solo", "Arcilla", "Polvo de diamante"], "correcta": ["Extractos de frutas y aceites"]},
-        {"marca": "MILANI", "pregunta": "¿Para qué se usa el 'Glow Hydrating Skin Tint'?", "opciones": ["Cobertura ligera con acabado luminoso", "Cobertura total mate", "Solo para ojos", "Como corrector de ojeras", "Para sellar el maquillaje"], "correcta": "Cobertura ligera con acabado luminoso"},
+        {"marca": "MILANI", "pregunta": "¿Qué ingrediente destaca en la línea 'Fruit Fetish'?", "opciones": ["Extractos de frutas y aceites", "Ácido hialurónico solo", "Arcilla", "Polvo de diamante"], "correcta": "Extractos de frutas y aceites"},
         {"marca": "MILANI", "pregunta": "¿Qué hace el 'Make It Last Sunscreen Setting Spray'?", "opciones": ["Fija el maquillaje y aporta SPF 30", "Solo fija", "Solo protege del sol", "Es un hidratante de noche"], "correcta": "Fija el maquillaje y aporta SPF 30"},
         {"marca": "MILANI", "pregunta": "¿Cuál es el beneficio del 'Understatement Lipliner'?", "opciones": ["Definir labios con fórmula cremosa", "Dar brillo", "Exfoliar labios", "Aumentar el volumen temporalmente"], "correcta": "Definir labios con fórmula cremosa"},
         {"marca": "MILANI", "pregunta": "¿Qué tipo de producto es el 'Cheek Kiss'?", "opciones": ["Rubor líquido/crema", "Labial mate", "Sombra de ojos", "Corrector"], "correcta": "Rubor líquido/crema"},
@@ -119,12 +114,9 @@ BANCO_PREGUNTAS = {
         # ... (Se incluyen 45 preguntas más de Milani sobre labiales Color Fetish, primers, rímel Anti-Gravity, etc.)
 
         # --- TOP FACE (40 Preguntas) ---
-        {"marca": "TOP FACE", "pregunta": "¿Qué acabado deja la base 'Sensitive Mineral Foundation'?", "opciones": ["Natural y saludable para piel sensible", "Mate acartonado", "Efecto máscara pesado"], "correcta": "Natural y saludable para piel sensible"},
         {"marca": "TOP FACE", "pregunta": "¿Para qué se utiliza el 'Instyle Lasting Finish Eye Liner'?", "opciones": ["Delineado de larga duración", "Sombra en polvo", "Rubor líquido", "Base de maquillaje"], "correcta": "Delineado de larga duración"},
-        {"marca": "TOP FACE", "pregunta": "¿Qué tipo de aplicador tiene el corrector 'Focus Point'?", "opciones": ["Punta de esponja grande", "Pincel fino", "Gotero"], "correcta": "Punta de esponja grande"},
         {"marca": "TOP FACE", "pregunta": "¿Cuál es la función del 'Skin Editor Matte Control'?", "opciones": ["Controlar el brillo y dar cobertura mate", "Solo hidratar", "Broncear la piel"], "correcta": "Controlar el brillo y dar cobertura mate"},
         {"marca": "TOP FACE", "pregunta": "¿Qué textura tiene el 'Instyle Creamy Highlighter'?", "opciones": ["Cremosa y fácil de difuminar", "Polvo compacto", "Líquido acuoso"], "correcta": "Cremosa y fácil de difuminar"},
-        {"marca": "TOP FACE", "pregunta": "¿Para qué sirve el 'Sensitive Mineral Concealer'?", "opciones": ["Cubrir ojeras en pieles sensibles", "Como base de maquillaje", "Para contorno fuerte", "Solo para labios", "Como pegamento"], "correcta": "Cubrir ojeras en pieles sensibles"},
         {"marca": "TOP FACE", "pregunta": "¿Qué beneficio tiene el 'Pore Filler Primer'?", "opciones": ["Rellenar poros y alisar textura", "Hidratar", "Dar color", "Fijar sombras"], "correcta": "Rellenar poros y alisar textura"},
         {"marca": "TOP FACE", "pregunta": "¿Qué acabado deja el 'Instyle Wet & Dry Powder'?", "opciones": ["Mate ajustable (seco o húmedo)", "Solo brillante", "Transparente"], "correcta": "Mate ajustable (seco o húmedo)"},
         {"marca": "TOP FACE", "pregunta": "¿Cuál es la función del 'Magic Touch Concealer'?", "opciones": ["Corregir e iluminar con aplicador esponja", "Limpiar la cara", "Dar brillo corporal"], "correcta": "Corregir e iluminar con aplicador esponja"},
