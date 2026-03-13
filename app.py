@@ -6,6 +6,7 @@ from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from streamlit_gsheets import GSheetsConnection
 from datetime import datetime
+import pytz  # <--- AQUÍ VA (Línea 9 o 10)
 from streamlit_autorefresh import st_autorefresh
 
 # --- 1. IMPORTACIÓN DEL BANCO DE PREGUNTAS (ARCHIVO SEPARADO) ---
@@ -20,6 +21,10 @@ st.set_page_config(page_title="VIVA Academy", page_icon="🚀", layout="centered
 
 # --- 3. CONEXIÓN A GOOGLE SHEETS ---
 conn = st.connection("gsheets", type=GSheetsConnection)
+# --- Función para obtener la hora exacta de Ecuador ---
+def obtener_hora_ecuador():
+    zona_ec = pytz.timezone('America/Guayaquil')
+    return datetime.now(zona_ec).strftime("%d/%m/%Y %H:%M")
 
 # --- 4. FUNCIÓN PARA ENVÍO DE CORREO (SOLO FALLOS Y NOTA) ---
 def enviar_reporte_errores(vendedor, nota, total, detalles, email_supervisor):
@@ -146,7 +151,7 @@ if st.session_state.examen_terminado:
         try:
             df_res = conn.read(worksheet="Resultados", ttl=0)
             datos = {
-                "Fecha": datetime.now().strftime("%d/%m/%Y %H:%M"),
+                "Fecha": obtener_hora_ecuador(), # <--- AQUÍ VA EL CAMBIO FINAL,
                 "Nombre": st.session_state.nom,
                 "Correo": st.session_state.correo,
                 "Sucursal": st.session_state.sucursal, # <--- Agregamos esta línea
