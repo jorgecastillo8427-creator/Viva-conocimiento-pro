@@ -43,6 +43,7 @@ def enviar_reporte_errores(vendedor, nota, total, detalles, email_supervisor):
         cuerpo = f"RESUMEN DE CERTIFICACIÓN - VIVA ACADEMY\n"
         cuerpo += f"{'='*40}\n"
         cuerpo += f"Vendedor: {vendedor}\n"
+        cuerpo += f"Categoría: {st.session_state.nivel}\n" # <--- Agregamos esta línea
         cuerpo += f"Resultado: {nota} / {total}\n"
         cuerpo += f"Estado: {estado_final}\n"
         cuerpo += f"{'='*40}\n\n"
@@ -148,6 +149,7 @@ if st.session_state.examen_terminado:
                 "Fecha": datetime.now().strftime("%d/%m/%Y %H:%M"),
                 "Nombre": st.session_state.nom,
                 "Correo": st.session_state.correo,
+                "Sucursal": st.session_state.sucursal, # <--- Agregamos esta línea
                 "Categoria": st.session_state.nivel,
                 "Calificacion": f"{puntaje}/{total}",
                 "Estado": "APROBADO" if puntaje >= 25 else "REPROBADO"
