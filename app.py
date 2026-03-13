@@ -62,10 +62,12 @@ def enviar_reporte_errores(vendedor, nota, total, detalles, email_supervisor):
             server.starttls()
             server.login(email_emisor, password)
             server.sendmail(email_emisor, [email_supervisor, email_gerencia], msg.as_string())
+        
         return True
+
     except Exception as e:
-    st.error(f"⚠️ Error técnico al enviar correo: {e}")
-    return False
+        st.error(f"⚠️ Error técnico al enviar correo: {e}")
+        return False
 
 # --- 5. INICIALIZACIÓN DE VARIABLES DE SESIÓN ---
 keys_to_init = {
