@@ -6,7 +6,6 @@ BANCO_PREGUNTAS = {
     {"marca": "MEDICUBE", "pregunta": "¿Para qué se utilizan los 'Zero Pore Pads 2.0'?", "opciones": ["Exfoliación y control de poros", "Desmaquillar ojos", "Limpiar heridas", "Hidratar labios"], "correcta": "Exfoliación y control de poros"},
     {"marca": "MEDICUBE", "pregunta": "¿Qué tecnología utiliza el dispositivo 'Age-R Booster H'?", "opciones": ["Electroporación", "Vapor", "Luz LED únicamente", "Infrarrojos"], "correcta": "Electroporación"},
     {"marca": "MEDICUBE", "pregunta": "¿Cuál es el beneficio de la 'Collagen Jelly Cream'?", "opciones": ["Aportar firmeza y luminosidad", "Quitar el maquillaje", "Secar granitos", "Exfoliar físicamente"], "correcta": "Aportar firmeza y luminosidad"},
-    {"marca": "MEDICUBE", "pregunta": "¿Qué línea de Medicube es ideal para pieles sensibles y con acné?", "opciones": ["Línea Red", "Línea Deep Vita C", "Línea Poremizing", "Línea Blue"], "correcta": "Línea Red"},
     {"marca": "MEDICUBE", "pregunta": "¿Para qué sirve el suero 'Deep Vita C'?", "opciones": ["Iluminar y tratar manchas", "Hidratar profundamente", "Calmar rojeces", "Limpiar poros"], "correcta": "Iluminar y tratar manchas"},
 
     # --- TOCOBO ---
@@ -44,7 +43,6 @@ BANCO_PREGUNTAS = {
     {"marca": "COSMETOLOGÍA", "pregunta": "¿Cuál es el beneficio de la Vitamina C?", "opciones": ["Antioxidante y luminosidad", "Hidratación extrema", "Cerrar poros", "Solo para dormir"], "correcta": "Antioxidante y luminosidad"},
 # --- AGREGAR ESTAS 50 PREGUNTAS EN LA LÍNEA 86 DE TU CÓDIGO ---
     {"marca": "COSRX", "pregunta": "¿Qué ingrediente principal tiene la 'Ultimate Nourishing Rice Overnight Spa Mask'?", "opciones": ["Extracto de Arroz", "Miel", "Centella", "Baba de Caracol"], "correcta": "Extracto de Arroz"},
-    {"marca": "MEDICUBE", "pregunta": "¿Para qué sirve el dispositivo 'Age-R ATS Air Shot'?", "opciones": ["Poros y textura de la piel", "Limpieza profunda", "Solo para hidratar", "Masaje muscular"], "correcta": "Poros y textura de la piel"},
     {"marca": "TOCOBO", "pregunta": "¿Qué tipo de protector solar es el 'Cica Calming Sun Serum'?", "opciones": ["Químico", "Físico", "Híbrido"], "correcta": "Químico"},
     {"marca": "COSRX", "pregunta": "¿Para qué se utiliza el 'BHA Blackhead Power Liquid'?", "opciones": ["Limpiar puntos negros y poros", "Hidratar la piel seca", "Quitar el rímel"], "correcta": "Limpiar puntos negros y poros"},
     {"marca": "MEDICUBE", "pregunta": "¿Qué función tienen los 'Super Cica Pads'?", "opciones": ["Calmar piel irritada", "Quitar manchas oscuras", "Secar la piel", "Solo para hombres"], "correcta": "Calmar piel irritada"},
@@ -55,10 +53,8 @@ BANCO_PREGUNTAS = {
     {"marca": "TOCOBO", "pregunta": "¿Para qué sirve el 'Collagen Brightening Eye Gel Cream'?", "opciones": ["Iluminar y reafirmar contorno de ojos", "Limpiar el rostro", "Crema para pies", "Bálsamo labial"], "correcta": "Iluminar y reafirmar contorno de ojos"},
     {"marca": "COSRX", "pregunta": "¿Qué textura tiene el 'Advanced Snail 92 All In One Cream'?", "opciones": ["Babosa y viscosa", "Líquida", "Polvo", "Aceitosa"], "correcta": "Babosa y viscosa"},
     {"marca": "TOCOBO", "pregunta": "¿Qué característica tiene el 'AHA BHA Lemon Toner'?", "opciones": ["pH bajo y exfoliación", "pH alto y limpieza", "No tiene pH", "Es un aceite"], "correcta": "pH bajo y exfoliación"},
-    {"marca": "MEDICUBE", "pregunta": "¿Para qué sirve el 'Red Succinic Acid Serum'?", "opciones": ["Control de acné y sebo", "Hidratación seca", "Protección solar", "Maquillaje", "Quitar arrugas"], "correcta": "Control de acné y sebo"},
     {"marca": "COSRX", "pregunta": "¿Cuál es el beneficio del 'Aloe Soothing Sun Cream'?", "opciones": ["Protección solar y calma", "Solo hidrata", "Limpia la cara", "Es un tinte"], "correcta": "Protección solar y calma"},
     {"marca": "COSMETOLOGÍA", "pregunta": "¿Qué es un 'Serum'?", "opciones": ["Concentrado de activos con textura ligera", "Un tipo de jabón", "Una crema espesa", "Agua normal"], "correcta": "Concentrado de activos con textura ligera"},
-    {"marca": "G9 SKIN", "pregunta": "¿Qué hace el 'Grapefruit Vitabubble Mask'?", "opciones": ["Limpieza profunda con burbujas de oxígeno", "Es una crema de manos", "Protector solar", "Solo hidrata"], "correcta": "Limpieza profunda con burbujas de oxígeno"},
     {"marca": "MEDICUBE", "pregunta": "¿Qué contiene la 'Blue Erasing Cream'?", "opciones": ["Ingredientes hidratantes y reparadores", "Pigmentos azules", "Alcohol fuerte", "Exfoliante físico"], "correcta": "Ingredientes hidratantes y reparadores"},
     {"marca": "TOCOBO", "pregunta": "¿Para qué sirve el 'Bifida Barrier Essence'?", "opciones": ["Fortalecer la barrera y antiedad", "Solo limpiar", "Dar color", "Secar granitos", "Quitar el sol"], "correcta": "Fortalecer la barrera y antiedad"},
     {"marca": "COSRX", "pregunta": "¿Qué paso es el 'Good Morning Gel Cleanser'?", "opciones": ["Segundo paso de limpieza (al agua)", "Primer paso (aceite)", "Hidratación", "Protección Solar"], "correcta": "Segundo paso de limpieza (al agua)"},
@@ -86,14 +82,12 @@ BANCO_PREGUNTAS = {
     {"marca": "TOCOBO", "pregunta": "¿Qué es el 'Glass Tinted Lip Balm'?", "opciones": ["Bálsamo con color y brillo", "Limpiador de labios", "Exfoliante"], "correcta": "Bálsamo con color y brillo"},
     {"marca": "COSRX", "pregunta": "¿Para qué se usa el 'Hyaluronic Acid Intensive Cream'?", "opciones": ["Hidratación máxima para piel seca", "Limpiar la cara", "Protección solar", "Exfoliar"], "correcta": "Hidratación máxima para piel seca"},
     {"marca": "COSMETOLOGÍA", "pregunta": "¿Qué es el pH de la piel?", "opciones": ["Potencial de Hidrógeno (acidez/alcalinidad)", "Una marca de cremas", "Un tipo de vitamina", "Grasa"], "correcta": "Potencial de Hidrógeno (acidez/alcalinidad)"},
-    {"marca": "MEDICUBE", "pregunta": "¿Para qué sirve el 'Deep Erasing Cream'?", "opciones": ["Tratar pecas y manchas", "Lavar el rostro", "Secar granitos", "Protección solar"], "correcta": "Tratar pecas y manchas"},
     {"marca": "TOCOBO", "pregunta": "¿Qué beneficio tiene el 'Multi Ceramide Cream'?", "opciones": ["Hidratación de larga duración (10 capas)", "Limpieza de poros", "Exfoliación física"], "correcta": "Hidratación de larga duración (10 capas)"},
     {"marca": "COSRX", "pregunta": "¿Para qué sirve el 'The Niacinamide 15 Serum'?", "opciones": ["Control de acné y poros", "Hidratar piel muy seca", "Solo para ojos", "Protección solar"], "correcta": "Control de acné y poros"},
     {"marca": "MEDICUBE", "pregunta": "¿Qué es el 'Age-R Derma Shot'?", "opciones": ["Dispositivo de EMS para masajear músculos", "Una crema", "Un suero", "Un tónico"], "correcta": "Dispositivo de EMS para masajear músculos"},
     {"marca": "TOCOBO", "pregunta": "¿Para qué sirve el 'Calming Ampoule'?", "opciones": ["Calmar piel irritada rápidamente", "Dar color", "Exfoliar", "Limpiar aceite"], "correcta": "Calmar piel irritada rápidamente"},
     {"marca": "COSRX", "pregunta": "¿Para qué se usa el 'Ultimate Moisturizing Honey Overnight Mask'?", "opciones": ["Calmar e hidratar con propóleo", "Secar granitos", "Lavar el pelo"], "correcta": "Calmar e hidratar con propóleo"},
     {"marca": "COSMETOLOGÍA", "pregunta": "¿Qué significa que un producto sea 'Cruelty-free'?", "opciones": ["No testado en animales", "No tiene químicos", "Es vegano", "Es barato"], "correcta": "No testado en animales"},
-    {"marca": "MEDICUBE", "pregunta": "¿Para qué sirve el 'Red Succinic Acid Serum'?", "opciones": ["Exfoliación suave para piel acnéica", "Hidratar", "Protección solar", "Maquillaje"], "correcta": "Exfoliación suave para piel acnéica"},
     {"marca": "TOCOBO", "pregunta": "¿Qué función tiene el 'Sun Stick' en la rutina?", "opciones": ["Reaplicar protección solar fácilmente", "Limpiar la cara", "Como tónico", "Es un jabón"], "correcta": "Reaplicar protección solar fácilmente"},
     {"marca": "COSMETOLOGÍA", "pregunta": "¿Cuál es el beneficio de exfoliar la piel?", "opciones": ["Remover células muertas y mejorar textura", "Manchar la piel", "Obstruir poros", "Quitar el sol"], "correcta": "Remover células muertas y mejorar textura"},
     
