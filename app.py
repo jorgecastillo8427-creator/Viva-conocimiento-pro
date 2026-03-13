@@ -221,7 +221,13 @@ if st.session_state.inicio:
     respuesta = st.radio("Elige una opción:", opciones, key=f"q_{i}")
 
     if st.button("Siguiente" if i < len(st.session_state.examen_actual)-1 else "Finalizar Evaluación"):
-        es_correcta = (respuesta == p_actual['correcta'])
+        # --- NUEVA LÓGICA DE LIMPIEZA ---
+        resp_usuario_limpia = str(respuesta).strip().replace("'", "").replace('"', "").lower()
+        resp_correcta_limpia = str(p_actual['correcta']).strip().replace("'", "").replace('"', "").lower()
+        
+        es_correcta = (resp_usuario_limpia == resp_correcta_limpia)
+        # -------------------------------
+        
         if es_correcta:
             st.session_state.puntos += 1
         
