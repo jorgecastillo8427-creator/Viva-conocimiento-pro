@@ -103,8 +103,8 @@ if not st.session_state.autenticado:
             # 1. Obtenemos los intentos actuales de la fila encontrada
             intentos_actuales = int(u.iloc[0].get('Intentos', 0))
             
-            if intentos_actuales >= 3:
-                st.error("❌ Has alcanzado el máximo de 3 intentos permitidos.")
+            if intentos_actuales >= 4:
+                st.error("❌ Has alcanzado el máximo de 4 intentos permitidos.")
             else:
                 # 2. SUMAMOS EL INTENTO Y ACTUALIZAMOS EL EXCEL
                 df_form.loc[df_form['clave'] == clave_input.strip(), 'Intentos'] = intentos_actuales + 1
